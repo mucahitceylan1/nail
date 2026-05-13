@@ -110,7 +110,11 @@ export default function HomePage() {
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
             className="hero-glass-card"
           >
-            <div className="hero-badge">{t('hero_vertical')}</div>
+            <div className="hero-editorial-badge">
+              <span className="dot"></span>
+              {t('hero_vertical')}
+              <span className="dot"></span>
+            </div>
             <h1 className="premium-display-h1">
               {t('hero_h1_line1')}
               <br />
@@ -212,17 +216,23 @@ export default function HomePage() {
           max-width: 600px;
           box-shadow: 0 32px 64px rgba(0,0,0,0.2);
         }
-        .hero-badge {
-          display: inline-block;
-          padding: 8px 16px;
-          background: var(--color-accent);
-          color: #FFF;
+        .hero-editorial-badge {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          color: var(--color-accent);
           font-size: 0.7rem;
           font-weight: 700;
-          letter-spacing: 0.2em;
+          letter-spacing: 0.3em;
           text-transform: uppercase;
-          border-radius: 100px;
           margin-bottom: 24px;
+        }
+        .hero-editorial-badge .dot {
+          width: 4px;
+          height: 4px;
+          background: var(--color-accent);
+          border-radius: 50%;
+          opacity: 0.6;
         }
         .premium-display-h1 {
           color: #FFF;
