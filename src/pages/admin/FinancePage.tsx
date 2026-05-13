@@ -10,8 +10,7 @@ import Modal from '../../components/ui/Modal';
 import ConfirmDialog from '../../components/ui/ConfirmDialog';
 import EmptyState from '../../components/ui/EmptyState';
 import { useFinanceStore } from '../../store/useFinanceStore';
-import { formatPrice, formatDate, getToday, getMonthName, getStartOfMonth, getEndOfMonth } from '../../utils/formatters';
-import { getStudioWallCalendarParts } from '../../utils/studioTime';
+import { formatPrice, formatDate, getToday, getStartOfMonth, getEndOfMonth } from '../../utils/formatters';
 import { validateAmount } from '../../utils/validators';
 import type { IncomeCategory, ExpenseCategory } from '../../types';
 
@@ -37,12 +36,8 @@ export default function FinancePage() {
   const transactions = useFinanceStore((s) => s.transactions);
   const addTransaction = useFinanceStore((s) => s.addTransaction);
   const deleteTransaction = useFinanceStore((s) => s.deleteTransaction);
-  const getMonthSummary = useFinanceStore((s) => s.getMonthSummary);
 
   const today = getToday();
-  const studioNow = getStudioWallCalendarParts();
-  const currentMonth = studioNow.month0;
-  const currentYear = studioNow.year;
 
   const [filterType, setFilterType] = useState<'all' | 'income' | 'expense'>('all');
   const [dateStart, setDateStart] = useState(getStartOfMonth(today));

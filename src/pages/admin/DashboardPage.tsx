@@ -2,7 +2,7 @@
 // Nail Lab. by İldem — Functional Command Center
 import { useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { Users, Calendar, TrendingUp, Camera, Plus, Clock, User, Phone, CheckCircle2 } from 'lucide-react';
+import { Users, Calendar, TrendingUp, CheckCircle2, Plus, Camera } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Badge from '../../components/ui/Badge';
 import Button from '../../components/ui/Button';

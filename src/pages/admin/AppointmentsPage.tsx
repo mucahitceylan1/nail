@@ -8,7 +8,6 @@ import { formatPrice, formatDate, formatPhone } from '../../utils/formatters';
 import Button from '../../components/ui/Button';
 import Badge from '../../components/ui/Badge';
 import EmptyState from '../../components/ui/EmptyState';
-import Input from '../../components/ui/Input';
 import type { Appointment } from '../../types';
 import AdminAppointmentCalendar from './AdminAppointmentCalendar';
 import CompleteAppointmentModal from '../../components/admin/CompleteAppointmentModal';
@@ -50,7 +49,6 @@ export default function AppointmentsPage() {
   const [completeOpen, setCompleteOpen] = useState(false);
   const [completeId, setCompleteId] = useState<string | null>(null);
   const [collected, setCollected] = useState('');
-  const [cNotes, setCNotes] = useState('');
 
   const filteredAppointments = useMemo(() => {
     return appointmentsSource
@@ -76,19 +74,7 @@ export default function AppointmentsPage() {
   const openListComplete = (app: Appointment) => {
     setCompleteId(app.id);
     setCollected(String(app.listTotalPrice));
-    setCNotes('');
     setCompleteOpen(true);
-  };
-
-  const submitListComplete = async () => {
-    if (!completeId) return;
-    const amt = collected.trim() === '' ? undefined : Number(collected.replace(',', '.'));
-    await completeAppointment(completeId, {
-      collectedAmount: Number.isFinite(amt as number) ? (amt as number) : undefined,
-      completionNotes: cNotes.trim() || undefined,
-    });
-    setCompleteOpen(false);
-    setCompleteId(null);
   };
 
   return (

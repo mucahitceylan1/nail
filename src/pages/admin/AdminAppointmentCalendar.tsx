@@ -1,6 +1,6 @@
 // src/pages/admin/AdminAppointmentCalendar.tsx
 import { useMemo, useState } from 'react';
-import { ChevronLeft, ChevronRight, Plus, Check, Trash2, CheckCircle2, X, User, Phone, Info } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Plus, X, User, Phone, Info } from 'lucide-react';
 import {
   BOOKING_TIME_SLOTS,
   STAFF_ILDEM_ID,
@@ -79,7 +79,6 @@ export default function AdminAppointmentCalendar() {
   const [completeOpen, setCompleteOpen] = useState(false);
   const [completeId, setCompleteId] = useState<string | null>(null);
   const [collected, setCollected] = useState('');
-  const [cNotes, setCNotes] = useState('');
 
   const [detailsOpen, setDetailsOpen] = useState(false);
   const [detailsAppt, setDetailsAppt] = useState<Appointment | null>(null);
@@ -146,21 +145,8 @@ export default function AdminAppointmentCalendar() {
   const openComplete = (id: string, defaultAmt: number) => {
     setCompleteId(id);
     setCollected(String(defaultAmt));
-    setCNotes('');
     setCompleteOpen(true);
   };
-
-  const submitComplete = async () => {
-    if (!completeId) return;
-    const amt = collected.trim() === '' ? undefined : Number(collected.replace(',', '.'));
-    await completeAppointment(completeId, {
-      collectedAmount: Number.isFinite(amt as number) ? (amt as number) : undefined,
-      completionNotes: cNotes.trim() || undefined,
-    });
-    setCompleteOpen(false);
-    setCompleteId(null);
-  };
-
   const renderSlotCell = (date: string, slot: TimeSlot, staffId: string) => {
       const closed = !isStudioBookingDayYmd(date);
       const a = apptFor(appointments, date, slot, staffId);
