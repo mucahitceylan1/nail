@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="4" fill="#0A0A0A"/>
+  <text x="32" y="28" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="700" fill="#C9A96E">Nail</text>
+  <text x="32" y="42" text-anchor="middle" font-family="Georgia, serif" font-size="10" font-style="italic" fill="#C9A96E">Lab.</text>
+  <line x1="16" y1="48" x2="48" y2="48" stroke="#C9A96E" stroke-width="0.5" opacity="0.5"/>
+</svg>

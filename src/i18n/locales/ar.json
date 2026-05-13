@@ -1,0 +1,297 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "services": "الخدمات",
+    "gallery": "المعرض",
+    "appointment": "حجز",
+    "care_guide": "دليل العناية",
+    "admin": "الإدارة",
+    "contact": "اتصل بنا",
+    "menu_home": "الرئيسية",
+    "menu_services": "الخدمات",
+    "menu_gallery": "المعرض",
+    "menu_care": "دليل العناية",
+    "menu_book": "احجز موعداً"
+  },
+  "common": {
+    "back": "رجوع",
+    "continue": "استمرار",
+    "submit": "تأكيد",
+    "loading": "جاري التحميل...",
+    "error": "حدث خطأ ما",
+    "success": "تم بنجاح",
+    "close": "إغلاق",
+    "details": "التفاصيل",
+    "appointment_failed": "تعذر إنشاء الموعد.",
+    "site_name_suffix": "Nail Lab. by İldem",
+    "fab_close": "إغلاق",
+    "fab_open_contact": "التواصل ووسائل التواصل"
+  },
+  "hero": {
+    "label": "فن الإشراف",
+    "lab_status": "حالة المختبر: نشط",
+    "title_lab": "تطبيق دقيق",
+    "title_art": "هندسة فنية",
+    "title_1": "تعبيرات",
+    "title_2": "متطورة",
+    "description": "نايل لاب، المصمم بأسلوب متفرد، يجمع بين البساطة والأناقة في كل لمسة. تقنيات احترافية ورؤية فنية.",
+    "cta": "احجز لحظتك",
+    "next_available": "الموعد التالي: اليوم 15:30",
+    "features": {
+      "hygiene": {
+        "title": "نظافة طبية",
+        "desc": "صحتك هي أولويتنا. يتم تعقيم كل أداة وفقاً لمعايير المستشفيات."
+      },
+      "technique": {
+        "title": "تقنية حرفية",
+        "desc": "نحن نرتقي بفن الأظافر من خلال تصميمات مخصصة ومنتجات عالمية رائدة."
+      },
+      "experience": {
+        "title": "تجربة فاخرة",
+        "desc": "نقدم راحة البوتيك ومنظوراً فنياً في كل لمسة."
+      }
+    }
+  },
+  "home": {
+    "technical_guide": "الدليل التقني",
+    "choose_shape": "أشكال هندسية",
+    "shape_desc": "نختار معاً الشكل الذي يعكس شخصيتك وهيكل يدك بشكل أفضل."
+  },
+  "services": {
+    "list_page_title": "خدماتنا",
+    "list_page_subtitle": "اختر العلاج وأنشئ موعداً في ثوانٍ.",
+    "seo_keywords": "خدمات الأظافر, أسعار, حجز موعد, مانيكير, بديكير",
+    "select_service": "اختيار",
+    "label": "عروض جمالية",
+    "title": "القائمة",
+    "description": "كل علاج يقدم بتقنيات حصرية منسقة لتعكس أسلوبك الشخصي وأناقتك الفريدة.",
+    "view_all": "عرض الكل",
+    "selected_works": "أعمال مختارة",
+    "collection": "المجموعة",
+    "book": "احجز الآن",
+    "detail_title": "تفاصيل العلاj",
+    "duration": "المدة",
+    "price": "السعر",
+    "price_on_request": "عند الطلب",
+    "whats_included": "ما الذي يشتمل عليه؟",
+    "no_description": "لا يوجد وصف تفصيلي متاح لهذه الخدمة بعد. يرجى استشارة أخصائينا.",
+    "real_results": "نتائج حقيقية",
+    "included_items": [
+      "تحليل احترافي",
+      "تطبيق صحي",
+      "منتجات فاخرة",
+      "نصائح العناية اللاحقة"
+    ],
+    "procedure": {
+      "title": "إجراءات المختبر",
+      "step1_title": "تحليل",
+      "step1_desc": "فحص مفصل لهيكل الأظافر وصحة الجلد.",
+      "step2_title": "تحضير",
+      "step2_desc": "تحضير السطح الصحي بالأجهزة الطبية.",
+      "step3_title": "تطبيق",
+      "step3_desc": "تطبيق عملية متعددة الطبقات بتقنيات مخصصة.",
+      "step4_title": "نهائي",
+      "step4_desc": "يكتمل بطبقة واقية ولمسة جمالية."
+    },
+    "categories": {
+      "all": "الكل",
+      "manicure": "مناكير",
+      "pedicure": "بديكير",
+      "nailart": "فن الأظافر",
+      "prosthesis": "تركيب",
+      "treatment": "عناية",
+      "kalici_oje": "طلاء دائم",
+      "protez_tirnak": "أظافر صناعية",
+      "protez_bakim": "عناية بالأظافر",
+      "manikur": "مناكير",
+      "pedikur": "بديكير",
+      "jel_guclendirme": "تقوية الجل",
+      "tirnak_yeme_tedavisi": "علاج قضم الأظافر",
+      "kas_sekillendirme": "تشكيل الحواجب",
+      "artlar": "فن الأظافر",
+      "tirnak_tamiri": "إصلاح الظفر",
+      "diger": "آخرى"
+    }
+  },
+  "gallery": {
+    "page_title": "نتائجنا",
+    "page_subtitle": "استلهم واختر تصميم الأظافر الذي تحلم به.",
+    "label": "مجلة مرئية",
+    "title": "الاختيار",
+    "description": "مجلة رقمية لتصاميمنا المنسقة الملتقطة تحت الضوء الطبيعي وبالأنسجة الأصلية.",
+    "seo_keywords": "معرض أظافر, قبل وبعد, nail art, صور أظافر",
+    "book_look": "احجز هذا التصميم",
+    "lightbox_cta": "احجز موعدك الآن لتكون جزءاً من هذه النتيجة.",
+    "filters": {
+      "all": "الكل",
+      "before": "قبل",
+      "after": "بعد"
+    },
+    "empty": "يتم تحديث معرضنا حالياً.",
+    "explore": "اكتشف المعرض",
+    "card_fallback": "عمل الاستوديو",
+    "lightbox_title": "هل تريدين هذا الشكل؟",
+    "lightbox_book": "اختيار الشكل والحجز",
+    "tab_salon": "الصالون",
+    "tab_portfolio": "معرض الأعمال",
+    "salon_empty": "لا توجد صور لمعرض الصالون بعد.",
+    "salon_book": "احجز موعدًا"
+  },
+  "appointment": {
+    "step_progress": "الخطوة {{current}} من {{total}}",
+    "continue_step": "متابعة",
+    "label": "كونسيرج",
+    "meta_description": "اختاري الخدمات والأخصائية والوقت؛ أكملي الحجز في خطوات قليلة.",
+    "seo_keywords": "حجز موعد, صالون أظافر, حجز أونلاين, Nail Lab",
+    "title": "احجز لحظتك",
+    "steps": {
+      "1": "الخطوة 01",
+      "2": "الخطوة 02",
+      "3": "الخطوة 03",
+      "services": "اختيار الخدمات",
+      "datetime": "التاريخ والوقت",
+      "details": "التفاصيل الشخصية"
+    },
+    "form": {
+      "name": "الاسم الكامل",
+      "phone": "رقم الهاتف",
+      "notes": "ملاحظات خاصة",
+      "submit": "تأكيد الحجز",
+      "name_error": "يجب أن يكون الاسم حرفين على الأقل",
+      "phone_error": "يرجى إدخال رقم هاتف صحيح",
+      "notes_placeholder": "ملاحظات اختيارية للاستوديو..."
+    },
+    "summary": {
+      "title": "مراجعة",
+      "date": "التاريخ",
+      "datetime_label": "التاريخ والوقت",
+      "selection": "الاختيار",
+      "specialist_label": "الأخصائية",
+      "total": "المجموع",
+      "reserved": "محجوز",
+      "success_msg": "تم تسجيل موعدك. سنتصل بك قريباً للتأكيد.",
+      "return": "العودة للرئيسية"
+    },
+    "available_times": "الأوقات المتاحة",
+    "slot_taken": "محجوز",
+    "studio_timezone_note": "التقويم والأوقات وفق التوقيت التركي (أوروبا/إسطنبول).",
+    "booking_viol_invalid_date": "التاريخ المحدد غير صالح.",
+    "booking_viol_past": "لا يمكن الحجز ليوم مضى.",
+    "booking_viol_sunday": "يوم الأحد مغلق؛ يُرجى اختيار يوم آخر.",
+    "booking_viol_slot": "لا يمكن الحجز في هذه الفترة الزمنية.",
+    "specialist_role": "أخصائية تصميم الأظافر",
+    "specialist_note": "الأخصائية: {{name}}",
+    "weekdays": ["M", "T", "W", "T", "F", "S", "S"]
+  },
+  "care": {
+    "label": "بروتوكول الصيانة",
+    "title": "دليل العناية",
+    "description": "دليل احترافي للحفاظ على صحة وجمال أظافرك بعد إجراءات المختبر.",
+    "seo_keywords": "العناية بالأظافر, العناية بعد الإجراء, جل, أظافر صناعية",
+    "warning_title": "طوارئ؟",
+    "prosthetic": {
+      "title": "العناية بالأظافر الصناعية",
+      "items": [
+        { "label": "أول 24 ساعة", "desc": "تجنبي الماء الساخن جداً والبخار (ساونا، حمام بخار)." },
+        { "label": "المواد الكيميائية", "desc": "ارتدِ قفازات عند التنظيف." },
+        { "label": "الضغط", "desc": "لا تستخدِمي الأظافر كأداة لفتح الصناديق." },
+        { "label": "القص", "desc": "لا تقصي أو تبردي التركيب في المنزل." }
+      ]
+    },
+    "nailart": {
+      "title": "حماية فن الأظافر",
+      "items": [
+        { "label": "الترطيب", "desc": "رطبي الجلد حول الظفر بزيت الكيوتيكل." },
+        { "label": "واقي الشمس", "desc": "بعض الألوان تبهت تحت الشمس — استخدمي الحماية." },
+        { "label": "البقع", "desc": "انتبهي للتوابل وصبغة الشعر." }
+      ]
+    },
+    "health": {
+      "title": "صحة الأظافر العامة",
+      "items": [
+        { "label": "صيانة دورية", "desc": "جددي التركيب كل 3–4 أسابيع." },
+        { "label": "إزالة الطلاء", "desc": "لا تقشري الجل الدائم بنفسك — يضر باللوحة." },
+        { "label": "فترات راحة", "desc": "استشيري الأخصائية حول فترات الراحة عند الحاجة." }
+      ]
+    },
+    "warning_body": "إذا شعرتِ بارتفاع الظفر أو فراغات هواء أو ألم بعد صدمة، تواصلي معنا فوراً.",
+    "consult_whatsapp": "راسلنا على واتساب"
+  },
+  "pageHome": {
+    "seo_title": "Nail Lab. by İldem — تصميم أظافر بلا عيوب",
+    "seo_description": "استوديو فاخر: جل، أظافر صناعية، مناكير وفن أظافر مخصص.",
+    "seo_keywords": "صالون أظافر, فن أظافر, أظافر صناعية, مانيكير, بديكير, تشاناكالي, Nail Lab",
+    "hero_vertical": "استوديو فاخر • جل • مناكير • عناية",
+    "hero_h1_line1": "أناقة",
+    "hero_h1_line2": "وكمال",
+    "hero_lead": "امنحي يديك العناية التي تستحقها. خبراء، مواد فاخرة وتصاميم شخصية — فن في أطراف أصابعك.",
+    "cta_appointment": "احجزي موعداً",
+    "cta_services": "عرض الخدمات",
+    "stat_clients_label": "عميلات سعيدات",
+    "stat_years_value": "6 سنوات",
+    "stat_years_label": "خبرة",
+    "stat_location_name": "تشاناكالي",
+    "stat_location_label": "الموقع",
+    "marquee_1": "مناكير وبديكير",
+    "marquee_2": "تقوية الجل",
+    "marquee_3": "عناية بالأظافر",
+    "marquee_4": "طلاء دائم",
+    "marquee_5": "فن الأظافر",
+    "qa_appointment_title": "احجزي موعداً",
+    "qa_appointment_desc": "الأوقات المتاحة",
+    "qa_services_title": "الخدمات",
+    "qa_services_desc": "جميع العلاجات",
+    "qa_care_title": "دليل العناية",
+    "qa_care_desc": "بعد العلاج",
+    "qa_gallery_title": "المعرض",
+    "qa_gallery_desc": "قبل وبعد",
+    "portfolio_title": "أعمال حديثة",
+    "portfolio_view_all": "عرض الكل",
+    "portfolio_cta": "احجزي هذا الشكل",
+    "portfolio_empty": "ستظهر أعمال جديدة هنا قريباً.",
+    "portfolio_alt": "صورة عميلة"
+  },
+  "admin": {
+    "nav_timeline": "الجدول الزمني",
+    "nav_site_gallery": "معرض الموقع",
+    "timeline_kicker": "قبل / بعد",
+    "timeline_title": "الجدول الزمني",
+    "timeline_week_prev": "الأسبوع السابق",
+    "timeline_week_next": "الأسبوع التالي",
+    "timeline_no_records": "لا توجد مواعيد",
+    "timeline_no_photo": "لا توجد صورة",
+    "timeline_lightbox_aria": "معاينة الصورة",
+    "timeline_prev": "السابق",
+    "timeline_next": "التالي",
+    "timeline_close": "إغلاق",
+    "timeline_card_aria": "تفاصيل الموعد",
+    "timeline_price_heading": "السعر",
+    "timeline_price_list": "القائمة",
+    "timeline_price_collected": "المحصّل",
+    "gallery_kicker": "معرض الموقع",
+    "gallery_title": "معرض الموقع",
+    "gallery_lead": "تُدار الصور المعروضة في الصفحة الرئيسية وعلامة تبويب الصالون من هنا (حاوية site-gallery).",
+    "gallery_upload": "رفع صور",
+    "gallery_refresh": "تحديث",
+    "gallery_delete": "حذف",
+    "gallery_delete_confirm": "حذف هذه الصورة والملف؟",
+    "gallery_move_up": "تحريك لأعلى",
+    "gallery_move_down": "تحريك لأسفل",
+    "gallery_empty": "لا توجد صور في معرض الموقع بعد."
+  },
+  "footer": {
+    "philosophy": "التفاصيل ليست مجرد تفاصيل، بل هي من تصنع التصميم.",
+    "description": "كمختبر أظافر متميز، نولي اهتماماً كبيراً للحرفية والتجربة الشخصية في كل علاج.",
+    "rights": "جميع الحقوق محفوظة",
+    "location": "الموقع",
+    "pages_heading": "الصفحات",
+    "contact_heading": "تواصل",
+    "tagline": "أظافرك تتحدث بهدوء عن هويتك. الكمال في كل تفصيل.",
+    "copyright": "© {{year}} Nail Lab. by İldem. جميع الحقوق محفوظة.",
+    "link_services": "الخدمات",
+    "link_appointment": "احجز موعداً",
+    "link_gallery": "المعرض",
+    "link_care": "دليل العناية",
+    "address_display": "تشاناكالي، تركيا"
+  }
+}

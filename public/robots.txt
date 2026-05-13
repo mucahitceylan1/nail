@@ -1,0 +1,9 @@
+# Nail Lab. — public site; admin panel should not be indexed.
+User-agent: *
+Allow: /
+
+Disallow: /admin
+Disallow: /admin/
+
+# After production domain is fixed, add an absolute sitemap URL, e.g.:
+# Sitemap: https://www.example.com/sitemap.xml

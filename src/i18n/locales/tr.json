@@ -1,0 +1,297 @@
+{
+  "nav": {
+    "home": "ANASAYFA",
+    "services": "HİZMETLER",
+    "gallery": "GALERİ",
+    "appointment": "RANDEVU",
+    "care_guide": "BAKIM REHBERİ",
+    "admin": "ADMİN",
+    "contact": "İLETİŞİME GEÇ",
+    "menu_home": "Anasayfa",
+    "menu_services": "Hizmetler",
+    "menu_gallery": "Galeri",
+    "menu_care": "Bakım Kılavuzu",
+    "menu_book": "Randevu Al"
+  },
+  "common": {
+    "back": "GERİ",
+    "continue": "DEVAM ET",
+    "submit": "ONAYLA",
+    "loading": "YÜKLENİYOR...",
+    "error": "BİR HATA OLUŞTU",
+    "success": "BAŞARILI",
+    "close": "KAPAT",
+    "details": "DETAYLAR",
+    "appointment_failed": "Randevu oluşturulamadı.",
+    "site_name_suffix": "Nail Lab. by İldem",
+    "fab_close": "Kapat",
+    "fab_open_contact": "İletişim ve sosyal medya"
+  },
+  "hero": {
+    "label": "Kürasyon Sanatı",
+    "lab_status": "LAB DURUMU: AKTİF",
+    "title_lab": "Hassas Uygulama",
+    "title_art": "Mühendislik Harikası Sanat",
+    "title_1": "Sofistike",
+    "title_2": "İfadeler",
+    "description": "Butik bir anlayışla tasarlanan Nail Lab. her dokunuşta minimalizmi ve zarafeti birleştiriyor. Kişiye özel teknikler ve sanatsal bir bakış açısı.",
+    "cta": "Randevu Oluştur",
+    "next_available": "Sıradaki Randevu: Bugün 15:30",
+    "features": {
+      "hygiene": {
+        "title": "Tıbbi Sınıf Hijyen",
+        "desc": "Sizin sağlığınız bizim önceliğimizdir. Her alet hastane standartlarında sterilize edilir."
+      },
+      "technique": {
+        "title": "Zanaatkar Teknik",
+        "desc": "Kişiye özel tasarımlar ve dünyaca ünlü ürünlerle tırnak sanatını bir üst seviyeye taşıyoruz."
+      },
+      "experience": {
+        "title": "Lüks Deneyim",
+        "desc": "Her dokunuşta butik bir konfor ve sanatsal bir bakış açısı sunuyoruz."
+      }
+    }
+  },
+  "home": {
+    "technical_guide": "TEKNİK REHBER",
+    "choose_shape": "Mühendislik Formları",
+    "shape_desc": "Karakterinizi ve el yapınızı en iyi yansıtan formu birlikte seçiyoruz."
+  },
+  "services": {
+    "list_page_title": "Hizmetlerimiz",
+    "list_page_subtitle": "İstediğiniz işlemi seçin ve saniyeler içinde randevu oluşturun.",
+    "seo_keywords": "hizmet listesi, nail salon, fiyat, süre, randevu, manikür, pedikür, Çanakkale",
+    "select_service": "Seç",
+    "label": "Estetik Teklifler",
+    "title": "Menü",
+    "description": "Her tedavi, kişisel tarzınızı ve benzersiz zarafetinizi yansıtacak şekilde küratörlüğünü yaptığımız özel tekniklerle sunulur.",
+    "view_all": "TÜMÜNÜ GÖR",
+    "selected_works": "Seçilen İşler",
+    "collection": "Koleksiyon",
+    "book": "RANDEVU AL",
+    "detail_title": "Tedavi Detayları",
+    "duration": "Süre",
+    "price": "Fiyat",
+    "price_on_request": "Talep Üzerine",
+    "whats_included": "Neler Dahil?",
+    "no_description": "Bu hizmet için henüz detaylı açıklama bulunmamaktadır. Lütfen uzmanımıza danışın.",
+    "real_results": "Gerçek Sonuçlar",
+    "included_items": [
+      "Profesyonel analiz",
+      "Hijyenik uygulama",
+      "Premium ürünler",
+      "Bakım tavsiyeleri"
+    ],
+    "procedure": {
+      "title": "Laboratuvar Prosedürü",
+      "step1_title": "Analiz",
+      "step1_desc": "Tırnak yapısı ve deri sağlığı detaylı kontrol edilir.",
+      "step2_title": "Hazırlık",
+      "step2_desc": "Medikal cihazlarla hijyenik zemin hazırlığı yapılır.",
+      "step3_title": "Uygulama",
+      "step3_desc": "Kişiye özel tekniklerle katmanlı işlem uygulanır.",
+      "step4_title": "Final",
+      "step4_desc": "Koruyucu katman ve estetik dokunuşla tamamlanır."
+    },
+    "categories": {
+      "all": "TÜMÜ",
+      "manicure": "MANİKÜR",
+      "pedicure": "PEDİKÜR",
+      "nailart": "NAİL ART",
+      "prosthesis": "PROTEZ",
+      "treatment": "BAKIM",
+      "kalici_oje": "KALICI OJE",
+      "protez_tirnak": "PROTEZ TIRNAK",
+      "protez_bakim": "PROTEZ BAKIM",
+      "manikur": "MANİKÜR",
+      "pedikur": "PEDİKÜR",
+      "jel_guclendirme": "JEL GÜÇLENDİRME",
+      "tirnak_yeme_tedavisi": "TIRNAK YEME TEDAVİSİ",
+      "kas_sekillendirme": "KAŞ ŞEKİLLENDİRME",
+      "artlar": "NAİL ART",
+      "tirnak_tamiri": "TIRNAK TAMİRİ",
+      "diger": "DİĞER"
+    }
+  },
+  "gallery": {
+    "page_title": "Sonuçlarımız",
+    "page_subtitle": "İlham alın ve hayalinizdeki tırnak tasarımını seçin.",
+    "label": "Görsel Günlük",
+    "title": "Seçki",
+    "description": "Doğal ışıkta ve özgün dokularla yakalanan küratörlüğünü yaptığımız tasarımların dijital günlüğü.",
+    "seo_keywords": "nail galeri, öncesi sonrası, nail art, protez tırnak fotoğraf, Çanakkale",
+    "book_look": "Bu Stili Al",
+    "lightbox_cta": "Bu sonucun bir parçası olmak için hemen randevunuzu planlayın.",
+    "filters": {
+      "all": "TÜMÜ",
+      "before": "ÖNCE",
+      "after": "SONRA"
+    },
+    "empty": "Kürasyonumuz şu anda güncelleniyor.",
+    "explore": "GALERİYİ KEŞFET",
+    "card_fallback": "Çalışma",
+    "lightbox_title": "Bu görünümü ister misiniz?",
+    "lightbox_book": "Bu stili seç ve randevu al",
+    "tab_salon": "Salon",
+    "tab_portfolio": "Portföy",
+    "salon_empty": "Salon galerisi için henüz görsel eklenmedi.",
+    "salon_book": "Randevu al"
+  },
+  "appointment": {
+    "step_progress": "Adım {{current}} / {{total}}",
+    "continue_step": "Devam",
+    "label": "Konsiyerj",
+    "meta_description": "Hizmet seçin, uzman ve tarih belirleyin; randevunuzu birkaç adımda tamamlayın.",
+    "seo_keywords": "online randevu, nail salon randevu, rezervasyon, Nail Lab, Çanakkale",
+    "title": "Randevu Oluştur",
+    "steps": {
+      "1": "Adım 01",
+      "2": "Adım 02",
+      "3": "Adım 03",
+      "services": "Hizmet Seçimi",
+      "datetime": "Tarih & Saat",
+      "details": "Kişisel Bilgiler"
+    },
+    "form": {
+      "name": "Ad Soyad",
+      "phone": "Telefon Numarası",
+      "notes": "Özel Notlar",
+      "submit": "Randevuyu Onayla",
+      "name_error": "İsim en az 2 karakter olmalıdır",
+      "phone_error": "Lütfen geçerli bir telefon numarası girin",
+      "notes_placeholder": "İsteğe bağlı notlar ({{name}} için)..."
+    },
+    "summary": {
+      "title": "Özet",
+      "date": "Tarih",
+      "datetime_label": "Tarih ve saat",
+      "selection": "Seçim",
+      "specialist_label": "Uzman",
+      "total": "Toplam",
+      "reserved": "Rezerve Edildi",
+      "success_msg": "Randevunuz kaydedildi. Onay için en kısa sürede sizinle iletişime geçeceğiz.",
+      "return": "Anasayfaya Dön"
+    },
+    "available_times": "Müsait saatler",
+    "slot_taken": "Dolu",
+    "studio_timezone_note": "Takvim ve müsaitlik saat dilimi: Türkiye (İstanbul).",
+    "booking_viol_invalid_date": "Geçersiz bir tarih seçildi.",
+    "booking_viol_past": "Geçmiş bir gün için randevu alınamaz.",
+    "booking_viol_sunday": "Pazar günleri randevu alınamaz.",
+    "booking_viol_slot": "Bu saat aralığında randevu alınamaz.",
+    "specialist_role": "Tırnak tasarım uzmanı",
+    "specialist_note": "Uzman: {{name}}",
+    "weekdays": ["Pzt", "Sal", "Çar", "Per", "Cum", "Cmt", "Paz"]
+  },
+  "care": {
+    "label": "BAKIM PROTOKOLÜ",
+    "title": "Bakım Rehberi",
+    "description": "Lab prosedürü sonrası tırnaklarınızın sağlığını ve estetiğini uzun süre korumak için hazırladığımız profesyonel rehber.",
+    "seo_keywords": "tırnak bakımı, protez bakım, kalıcı oje bakımı, nail aftercare, manikür bakımı",
+    "warning_title": "Acil Durum?",
+    "prosthetic": {
+      "title": "Protez Tırnak Bakımı",
+      "items": [
+        { "label": "İlk 24 saat", "desc": "Aşırı sıcak su ve buhardan (sauna, hamam) kaçının." },
+        { "label": "Kimyasallar", "desc": "Temizlik yaparken mutlaka eldiven kullanın." },
+        { "label": "Baskı", "desc": "Tırnaklarınızı kutu açmak veya kazımak için alet olarak kullanmayın." },
+        { "label": "Kısaltma", "desc": "Tırnaklarınızı evde kendiniz kesmeyin veya törpülemeyin." }
+      ]
+    },
+    "nailart": {
+      "title": "Nail Art Koruma",
+      "items": [
+        { "label": "Nemlendirme", "desc": "Kütikül yağı ile tırnak etlerinizi esnek tutun." },
+        { "label": "Güneş kremi", "desc": "Bazı renkler güneşte solabilir; koruma kullanın." },
+        { "label": "Leke", "desc": "Baharatlı gıdalar veya saç boyası ile temasa dikkat edin." }
+      ]
+    },
+    "health": {
+      "title": "Genel Tırnak Sağlığı",
+      "items": [
+        { "label": "Periyodik bakım", "desc": "Protez tırnaklarınızı 3–4 haftada bir yenileyin." },
+        { "label": "Oje çıkarma", "desc": "Kalıcı ojeyi asla kendiniz soymayın; plakaya zarar verir." },
+        { "label": "Mola", "desc": "Zaman zaman tırnaklarınızı dinlendirmek için uzmanınıza danışın." }
+      ]
+    },
+    "warning_body": "Darbe sonrası kalkma, hava alma veya ağrı hissederseniz beklemeyin; bizimle iletişime geçin.",
+    "consult_whatsapp": "DANIŞMANA YAZIN"
+  },
+  "pageHome": {
+    "seo_title": "Nail Lab. by İldem — Kusursuz Tırnak Tasarımı",
+    "seo_description": "Kalıcı oje, protez tırnak, manikür ve kişiye özel nail art ile premium tırnak stüdyosu.",
+    "seo_keywords": "tırnak salonu, nail art, protez tırnak, manikür, pedikür, kalıcı oje, Çanakkale, Nail Lab",
+    "hero_vertical": "PREMİUM NAİL STUDİO • KALICI OJE • MANİKÜR • BAKIM",
+    "hero_h1_line1": "Zarafet",
+    "hero_h1_line2": "& Kusursuzluk",
+    "hero_lead": "Ellerinize hak ettiği değeri verin. Uzman dokunuşlar, en kaliteli malzemeler ve kişiye özel tasarımlarla tırnaklarınızda sanatı hissedin.",
+    "cta_appointment": "Randevu Al",
+    "cta_services": "Hizmetleri Gör",
+    "stat_clients_label": "Mutlu Müşteri",
+    "stat_years_value": "6 Yıl",
+    "stat_years_label": "Deneyim",
+    "stat_location_name": "Çanakkale",
+    "stat_location_label": "Konum",
+    "marquee_1": "MANİKÜR & PEDİKÜR",
+    "marquee_2": "JEL GÜÇLENDİRME",
+    "marquee_3": "PROTEZ BAKIM",
+    "marquee_4": "KALICI OJE",
+    "marquee_5": "NAİL ART",
+    "qa_appointment_title": "Randevu Al",
+    "qa_appointment_desc": "Müsait saatleri gör",
+    "qa_services_title": "Hizmetler",
+    "qa_services_desc": "Tüm işlemleri incele",
+    "qa_care_title": "Bakım Kılavuzu",
+    "qa_care_desc": "İşlem sonrası bakım",
+    "qa_gallery_title": "Galeri",
+    "qa_gallery_desc": "Öncesi & Sonrası",
+    "portfolio_title": "Son Çalışmalar",
+    "portfolio_view_all": "Tümünü Gör",
+    "portfolio_cta": "Bunun için Randevu Al",
+    "portfolio_empty": "Yeni çalışmalar çok yakında burada sergilenecektir.",
+    "portfolio_alt": "Müşteri Görseli"
+  },
+  "admin": {
+    "nav_timeline": "Zaman çizelgesi",
+    "nav_site_gallery": "Site galerisi",
+    "timeline_kicker": "BEFORE / AFTER",
+    "timeline_title": "Zaman çizelgesi",
+    "timeline_week_prev": "Önceki hafta",
+    "timeline_week_next": "Sonraki hafta",
+    "timeline_no_records": "Kayıt yok",
+    "timeline_no_photo": "Foto yok",
+    "timeline_lightbox_aria": "Fotoğraf önizleme",
+    "timeline_prev": "Önceki",
+    "timeline_next": "Sonraki",
+    "timeline_close": "Kapat",
+    "timeline_card_aria": "Randevu künyesi",
+    "timeline_price_heading": "Fiyat",
+    "timeline_price_list": "Liste",
+    "timeline_price_collected": "Tahsil",
+    "gallery_kicker": "SITE GALERİSİ",
+    "gallery_title": "Site galerisi",
+    "gallery_lead": "Anasayfa ve galeri sekmesindeki salon görselleri buradan yönetilir (site-gallery).",
+    "gallery_upload": "Görsel yükle",
+    "gallery_refresh": "Yenile",
+    "gallery_delete": "Sil",
+    "gallery_delete_confirm": "Bu görseli ve dosyayı silmek istediğinize emin misiniz?",
+    "gallery_move_up": "Yukarı taşı",
+    "gallery_move_down": "Aşağı taşı",
+    "gallery_empty": "Henüz site galerisinde görsel yok."
+  },
+  "footer": {
+    "philosophy": "Detaylar sadece detay değildir, tasarımı onlar oluşturur.",
+    "description": "Butik bir tırnak laboratuvarı olarak, her işlemde işçiliği ve kişiselleştirilmiş deneyimi ön planda tutuyoruz.",
+    "rights": "Tüm Hakları Saklıdır",
+    "location": "Konum",
+    "pages_heading": "Sayfalar",
+    "contact_heading": "İletişim",
+    "tagline": "Tırnaklarınız, kimliğinizin sessiz dili. Her detayda mükemmellik.",
+    "copyright": "© {{year}} Nail Lab. by İldem. Tüm hakları saklıdır.",
+    "link_services": "Hizmetler",
+    "link_appointment": "Randevu Al",
+    "link_gallery": "Galeri",
+    "link_care": "Bakım Rehberi",
+    "address_display": "Çanakkale, Türkiye"
+  }
+}

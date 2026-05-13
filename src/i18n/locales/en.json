@@ -1,0 +1,297 @@
+{
+  "nav": {
+    "home": "HOME",
+    "services": "SERVICES",
+    "gallery": "GALLERY",
+    "appointment": "BOOKING",
+    "care_guide": "CARE GUIDE",
+    "admin": "ADMIN",
+    "contact": "CONTACT",
+    "menu_home": "Home",
+    "menu_services": "Services",
+    "menu_gallery": "Gallery",
+    "menu_care": "Care guide",
+    "menu_book": "Book now"
+  },
+  "common": {
+    "back": "BACK",
+    "continue": "CONTINUE",
+    "submit": "SUBMIT",
+    "loading": "LOADING...",
+    "error": "AN ERROR OCCURRED",
+    "success": "SUCCESS",
+    "close": "CLOSE",
+    "details": "DETAILS",
+    "appointment_failed": "Could not create the appointment.",
+    "site_name_suffix": "Nail Lab. by İldem",
+    "fab_close": "Close",
+    "fab_open_contact": "Contact and social"
+  },
+  "hero": {
+    "label": "The Art of Curation",
+    "lab_status": "LAB STATUS: ACTIVE",
+    "title_lab": "Precision Applied",
+    "title_art": "Artistry Engineered",
+    "title_1": "Sophisticated",
+    "title_2": "Expressions",
+    "description": "Nail Lab. designed with a boutique approach combines minimalism and elegance in every touch. Custom techniques and an artistic perspective.",
+    "cta": "Reserve a Moment",
+    "next_available": "Next Slot: Today at 15:30",
+    "features": {
+      "hygiene": {
+        "title": "Medical Grade Hygiene",
+        "desc": "Your health is our priority. Every tool is sterilized to hospital standards."
+      },
+      "technique": {
+        "title": "Artisanal Technique",
+        "desc": "We elevate nail art with custom designs and world-renowned products."
+      },
+      "experience": {
+        "title": "Luxury Experience",
+        "desc": "We offer boutique comfort and an artistic perspective in every touch."
+      }
+    }
+  },
+  "home": {
+    "technical_guide": "TECHNICAL GUIDE",
+    "choose_shape": "Engineered Shapes",
+    "shape_desc": "We collaborate to choose the form that best reflects your character and hand structure."
+  },
+  "services": {
+    "list_page_title": "Our services",
+    "list_page_subtitle": "Choose a treatment and create an appointment in seconds.",
+    "seo_keywords": "nail services, menu, pricing, booking, manicure, pedicure, Çanakkale",
+    "select_service": "Select",
+    "label": "Aesthetic Offerings",
+    "title": "Menu",
+    "description": "Each treatment is presented with exclusive techniques curated to reflect your personal style and unique elegance.",
+    "view_all": "VIEW ALL",
+    "selected_works": "Selected Works",
+    "collection": "Collection",
+    "book": "BOOK NOW",
+    "detail_title": "Treatment Details",
+    "duration": "Duration",
+    "price": "Price",
+    "price_on_request": "Price on Request",
+    "whats_included": "What's Included?",
+    "no_description": "Detailed description for this service is not available yet. Please consult our specialist.",
+    "real_results": "Real Results",
+    "included_items": [
+      "Professional analysis",
+      "Hygienic application",
+      "Premium products",
+      "Aftercare advice"
+    ],
+    "procedure": {
+      "title": "Laboratory Procedure",
+      "step1_title": "Analysis",
+      "step1_desc": "Nail structure and skin health are checked in detail.",
+      "step2_title": "Preparation",
+      "step2_desc": "Hygienic surface preparation is done with medical devices.",
+      "step3_title": "Application",
+      "step3_desc": "Layered process is applied with custom techniques.",
+      "step4_title": "Final",
+      "step4_desc": "Completed with protective layer and aesthetic touch."
+    },
+    "categories": {
+      "all": "ALL",
+      "manicure": "MANICURE",
+      "pedicure": "PEDICURE",
+      "nailart": "NAIL ART",
+      "prosthesis": "PROSTHESIS",
+      "treatment": "TREATMENT",
+      "kalici_oje": "GEL POLISH",
+      "protez_tirnak": "PROSTHETIC NAIL",
+      "protez_bakim": "PROSTHETIC CARE",
+      "manikur": "MANICURE",
+      "pedikur": "PEDICURE",
+      "jel_guclendirme": "GEL STRENGTHENING",
+      "tirnak_yeme_tedavisi": "NAIL BITING TREATMENT",
+      "kas_sekillendirme": "BROW SHAPING",
+      "artlar": "NAIL ART",
+      "tirnak_tamiri": "NAIL REPAIR",
+      "diger": "OTHER"
+    }
+  },
+  "gallery": {
+    "page_title": "Our results",
+    "page_subtitle": "Get inspired and choose the nail design you want.",
+    "label": "Visual Journal",
+    "title": "Selection",
+    "description": "A digital journal of our curated designs captured in natural light and authentic textures.",
+    "seo_keywords": "nail gallery, before and after, nail art inspiration, gel nails photos",
+    "book_look": "Book this Look",
+    "lightbox_cta": "Schedule your appointment now to become part of this result.",
+    "filters": {
+      "all": "ALL",
+      "before": "BEFORE",
+      "after": "AFTER"
+    },
+    "empty": "Our curation is currently being updated.",
+    "explore": "EXPLORE GALLERY",
+    "card_fallback": "Studio work",
+    "lightbox_title": "Want this look?",
+    "lightbox_book": "Choose this style and book",
+    "tab_salon": "Salon",
+    "tab_portfolio": "Portfolio",
+    "salon_empty": "No salon gallery images yet.",
+    "salon_book": "Book an appointment"
+  },
+  "appointment": {
+    "step_progress": "Step {{current}} of {{total}}",
+    "continue_step": "Continue",
+    "label": "Concierge",
+    "meta_description": "Choose services, specialist and time; complete your booking in a few steps.",
+    "seo_keywords": "book appointment, nail salon booking, online reservation, Nail Lab",
+    "title": "Reserve a Moment",
+    "steps": {
+      "1": "Step 01",
+      "2": "Step 02",
+      "3": "Step 03",
+      "services": "Service Selection",
+      "datetime": "Date & Time",
+      "details": "Personal Details"
+    },
+    "form": {
+      "name": "Full Name",
+      "phone": "Phone Number",
+      "notes": "Special Notes",
+      "submit": "Confirm Appointment",
+      "name_error": "Name must be at least 2 characters",
+      "phone_error": "Please enter a valid phone number",
+      "notes_placeholder": "Optional notes for the studio..."
+    },
+    "summary": {
+      "title": "Summary",
+      "date": "Date",
+      "datetime_label": "Date & time",
+      "selection": "Selection",
+      "specialist_label": "Specialist",
+      "total": "Total",
+      "reserved": "Reserved",
+      "success_msg": "Your appointment has been registered. We will contact you shortly for confirmation.",
+      "return": "Return to Home"
+    },
+    "available_times": "Available times",
+    "slot_taken": "Taken",
+    "studio_timezone_note": "Calendar and availability use Turkey time (Europe/Istanbul).",
+    "booking_viol_invalid_date": "The selected date is not valid.",
+    "booking_viol_past": "You cannot book a past date.",
+    "booking_viol_sunday": "We are closed on Sundays; please pick another day.",
+    "booking_viol_slot": "This time slot is not available for booking.",
+    "specialist_role": "Nail design specialist",
+    "specialist_note": "Specialist: {{name}}",
+    "weekdays": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+  },
+  "care": {
+    "label": "MAINTENANCE PROTOCOL",
+    "title": "Care Guide",
+    "description": "Professional guide for the long-term health and aesthetics of your nails after laboratory procedures.",
+    "seo_keywords": "nail care, aftercare, gel maintenance, acrylic care, manicure tips",
+    "warning_title": "Emergency?",
+    "prosthetic": {
+      "title": "Prosthetic Nail Care",
+      "items": [
+        { "label": "First 24 hours", "desc": "Avoid very hot water and steam (sauna, hammam)." },
+        { "label": "Chemicals", "desc": "Wear gloves when cleaning." },
+        { "label": "Pressure", "desc": "Do not use nails as tools to open boxes or scrape." },
+        { "label": "Shortening", "desc": "Do not cut or file extensions at home." }
+      ]
+    },
+    "nailart": {
+      "title": "Nail Art Protection",
+      "items": [
+        { "label": "Moisture", "desc": "Keep cuticles supple with cuticle oil." },
+        { "label": "Sunscreen", "desc": "Some colours can fade in the sun; use protection." },
+        { "label": "Stains", "desc": "Mind contact with spices or hair dye." }
+      ]
+    },
+    "health": {
+      "title": "General Nail Health",
+      "items": [
+        { "label": "Regular maintenance", "desc": "Refresh extensions every 3–4 weeks." },
+        { "label": "Removal", "desc": "Never peel off gel polish yourself; it damages the plate." },
+        { "label": "Breaks", "desc": "Ask your specialist about resting periods when needed." }
+      ]
+    },
+    "warning_body": "If you feel lifting, air pockets, or pain after an impact, contact us without delay.",
+    "consult_whatsapp": "MESSAGE US ON WHATSAPP"
+  },
+  "pageHome": {
+    "seo_title": "Nail Lab. by İldem — Flawless nail design",
+    "seo_description": "Premium nail studio: gel, extensions, manicure and bespoke nail art.",
+    "seo_keywords": "nail salon, nail art, gel nails, manicure, pedicure, Çanakkale, Nail Lab",
+    "hero_vertical": "PREMIUM NAIL STUDIO • GEL • MANICURE • CARE",
+    "hero_h1_line1": "Grace",
+    "hero_h1_line2": "& Perfection",
+    "hero_lead": "Give your hands the care they deserve. Expert touch, premium materials and bespoke designs — art at your fingertips.",
+    "cta_appointment": "Book now",
+    "cta_services": "View services",
+    "stat_clients_label": "Happy clients",
+    "stat_years_value": "6 years",
+    "stat_years_label": "Experience",
+    "stat_location_name": "Çanakkale",
+    "stat_location_label": "Location",
+    "marquee_1": "MANICURE & PEDICURE",
+    "marquee_2": "GEL STRENGTHENING",
+    "marquee_3": "EXTENSION CARE",
+    "marquee_4": "GEL POLISH",
+    "marquee_5": "NAIL ART",
+    "qa_appointment_title": "Book now",
+    "qa_appointment_desc": "See available times",
+    "qa_services_title": "Services",
+    "qa_services_desc": "Browse all treatments",
+    "qa_care_title": "Care guide",
+    "qa_care_desc": "Aftercare tips",
+    "qa_gallery_title": "Gallery",
+    "qa_gallery_desc": "Before & after",
+    "portfolio_title": "Recent work",
+    "portfolio_view_all": "View all",
+    "portfolio_cta": "Book this look",
+    "portfolio_empty": "New work will appear here soon.",
+    "portfolio_alt": "Client photo"
+  },
+  "admin": {
+    "nav_timeline": "Timeline",
+    "nav_site_gallery": "Site gallery",
+    "timeline_kicker": "BEFORE / AFTER",
+    "timeline_title": "Timeline",
+    "timeline_week_prev": "Previous week",
+    "timeline_week_next": "Next week",
+    "timeline_no_records": "No appointments",
+    "timeline_no_photo": "No photo",
+    "timeline_lightbox_aria": "Photo preview",
+    "timeline_prev": "Previous",
+    "timeline_next": "Next",
+    "timeline_close": "Close",
+    "timeline_card_aria": "Appointment details",
+    "timeline_price_heading": "Pricing",
+    "timeline_price_list": "Listed",
+    "timeline_price_collected": "Collected",
+    "gallery_kicker": "SITE GALLERY",
+    "gallery_title": "Site gallery",
+    "gallery_lead": "Images shown on the home page and Salon tab are managed here (site-gallery bucket).",
+    "gallery_upload": "Upload images",
+    "gallery_refresh": "Refresh",
+    "gallery_delete": "Delete",
+    "gallery_delete_confirm": "Delete this image and its file?",
+    "gallery_move_up": "Move up",
+    "gallery_move_down": "Move down",
+    "gallery_empty": "No site gallery images yet."
+  },
+  "footer": {
+    "philosophy": "Details are not just details, they make the design.",
+    "description": "As a boutique nail laboratory, we prioritize craftsmanship and personalized experience in every treatment.",
+    "rights": "All Rights Reserved",
+    "location": "Location",
+    "pages_heading": "Pages",
+    "contact_heading": "Contact",
+    "tagline": "Your nails speak softly for who you are. Perfection in every detail.",
+    "copyright": "© {{year}} Nail Lab. by İldem. All rights reserved.",
+    "link_services": "Services",
+    "link_appointment": "Book now",
+    "link_gallery": "Gallery",
+    "link_care": "Care guide",
+    "address_display": "Çanakkale, Turkey"
+  }
+}
