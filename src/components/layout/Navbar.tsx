@@ -140,8 +140,17 @@ function LanguageDropdown({
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
   const { t } = useTranslation(['nav']);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const navLinks = [
     { to: '/', label: t('nav:menu_home') },
@@ -149,6 +158,8 @@ export default function Navbar() {
     { to: '/gallery', label: t('nav:menu_gallery') },
     { to: '/care-guide', label: t('nav:menu_care') },
   ];
+
+  const isHome = stripLocaleFromPathname(location.pathname) === '/';
 
   return (
     <>
@@ -159,18 +170,21 @@ export default function Navbar() {
           top: 0,
           left: 0,
           right: 0,
-          background: 'color-mix(in srgb, var(--color-surface) 90%, transparent)',
-          WebkitBackdropFilter: 'saturate(1.2) blur(12px)',
-          backdropFilter: 'saturate(1.2) blur(12px)',
-          borderBottom: '1px solid var(--color-border)',
+          background: scrolled || mobileOpen 
+            ? 'rgba(255, 255, 255, 0.85)' 
+            : isHome ? 'transparent' : 'rgba(255, 255, 255, 0.85)',
+          WebkitBackdropFilter: scrolled || mobileOpen ? 'saturate(1.2) blur(20px)' : 'none',
+          backdropFilter: scrolled || mobileOpen ? 'saturate(1.2) blur(20px)' : 'none',
+          borderBottom: scrolled || mobileOpen ? '1px solid rgba(0,0,0,0.05)' : 'none',
           display: 'grid',
           gridTemplateColumns: '1fr auto 1fr',
           alignItems: 'center',
           columnGap: 'clamp(12px, 2vw, 24px)',
           paddingLeft: '4vw',
           paddingRight: '4vw',
-          paddingBottom: 0,
-          zIndex: 50,
+          height: '80px',
+          zIndex: 100,
+          transition: 'all 0.4s cubic-bezier(0.16, 1, 0.3, 1)',
         }}
       >
         {/* Brand */}
@@ -188,23 +202,25 @@ export default function Navbar() {
           <span
             style={{
               fontFamily: 'var(--font-display)',
-              fontSize: '1.5rem',
-              color: 'var(--color-text)',
-              letterSpacing: '0.02em',
+              fontSize: '1.6rem',
+              color: scrolled || mobileOpen || !isHome ? 'var(--color-text)' : '#FFF',
+              letterSpacing: '0.01em',
               lineHeight: 1,
-              fontWeight: 700,
+              fontWeight: 800,
+              transition: 'color 0.4s ease',
             }}
           >
             Nail Lab.
           </span>
           <span
             style={{
-              fontSize: '0.65rem',
+              fontSize: '0.6rem',
               textTransform: 'uppercase',
-              letterSpacing: '0.1em',
-              color: 'var(--color-accent)',
+              letterSpacing: '0.2em',
+              color: scrolled || mobileOpen || !isHome ? 'var(--color-accent)' : 'rgba(255,255,255,0.8)',
               marginTop: '4px',
-              fontWeight: 600,
+              fontWeight: 700,
+              transition: 'color 0.4s ease',
             }}
           >
             by İldem
@@ -222,11 +238,15 @@ export default function Navbar() {
                 to={link.to}
                 style={{
                   fontSize: '0.85rem',
-                  fontWeight: 600,
-                  color: active ? 'var(--color-accent)' : 'var(--color-text)',
+                  fontWeight: 700,
+                  color: active 
+                    ? 'var(--color-accent)' 
+                    : (scrolled || mobileOpen || !isHome ? 'var(--color-text)' : 'rgba(255,255,255,0.9)'),
                   textDecoration: 'none',
-                  transition: 'color 0.2s ease',
+                  transition: 'color 0.4s ease',
                   padding: '8px 0',
+                  letterSpacing: '0.05em',
+                  textTransform: 'uppercase',
                 }}
               >
                 {link.label}
@@ -246,7 +266,11 @@ export default function Navbar() {
           }}
         >
           <div className="desktop-nav" style={{ display: 'flex', gap: '24px', alignItems: 'center' }}>
-            <LocalizedLink to="/appointment" className="btn-ghost" style={{ padding: '8px 24px', fontSize: '0.75rem' }}>
+            <LocalizedLink 
+              to="/appointment" 
+              className={scrolled || mobileOpen || !isHome ? "btn-ghost" : "btn-luxury-outline"}
+              style={{ padding: '8px 24px', fontSize: '0.75rem', borderRadius: '8px' }}
+            >
               {t('nav:menu_book')}
             </LocalizedLink>
             <LanguageDropdown menuAlign="end" />
@@ -254,9 +278,17 @@ export default function Navbar() {
           <button
             className="mobile-toggle"
             onClick={() => setMobileOpen(!mobileOpen)}
-            style={{ color: 'var(--color-text)', background: 'var(--color-surface-2)', border: 'none', padding: '8px', borderRadius: '4px' }}
+            style={{ 
+              color: scrolled || mobileOpen || !isHome ? 'var(--color-text)' : '#FFF', 
+              background: scrolled || mobileOpen || !isHome ? 'rgba(0,0,0,0.05)' : 'rgba(255,255,255,0.15)', 
+              border: 'none', 
+              padding: '12px', 
+              borderRadius: '12px',
+              transition: 'all 0.4s ease',
+              backdropFilter: 'blur(10px)',
+            }}
           >
-            {mobileOpen ? <X size={20} /> : <Menu size={20} />}
+            {mobileOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
       </nav>

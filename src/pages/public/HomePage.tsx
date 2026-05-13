@@ -77,140 +77,241 @@ export default function HomePage() {
         pathWithoutLocale="/"
       />
 
-      <section className="hero-split">
-        <div className="hero-split__left">
-          <div
-            className="hero-vertical-side"
-            style={{
-              position: 'absolute',
-              left: '4vw',
-              top: '58%',
-              transform: 'translateY(-50%) rotate(-90deg)',
-              transformOrigin: 'left center',
-              whiteSpace: 'nowrap',
-              opacity: 0.4,
-              fontSize: '0.65rem',
-              letterSpacing: '0.3em',
-              textTransform: 'uppercase',
-              pointerEvents: 'none',
-              zIndex: 0,
-            }}
-          >
-            {t('hero_vertical')}
+      <section className="hero-premium">
+        <div className="hero-premium__bg">
+          <motion.img 
+            src="/hero-nail-art.png" 
+            alt="Nail Lab Luxury" 
+            initial={{ scale: 1.2 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+          />
+          <div className="hero-premium__overlay" style={{ background: 'linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(107, 76, 58, 0.6) 100%)' }}></div>
+          
+          {/* Animated Background Orbs */}
+          <div className="hero-orbs">
+            <motion.div 
+              animate={{ x: [0, 100, 0], y: [0, 50, 0] }}
+              transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
+              className="orb orb-1" 
+            />
+            <motion.div 
+              animate={{ x: [0, -80, 0], y: [0, 120, 0] }}
+              transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+              className="orb orb-2" 
+            />
           </div>
+        </div>
 
-          <div className="hero-split__inner" style={{ position: 'relative', zIndex: 1 }}>
-            <h1 className="display-1" style={{ marginBottom: '32px', fontSize: 'clamp(2.5rem, 5vw, 4.5rem)' }}>
+        <div className="hero-premium__content">
+          <motion.div 
+            initial={{ y: 40, opacity: 0, scale: 0.95 }} 
+            animate={{ y: 0, opacity: 1, scale: 1 }} 
+            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+            className="hero-glass-card"
+          >
+            <div className="hero-badge">{t('hero_vertical')}</div>
+            <h1 className="premium-display-h1">
               {t('hero_h1_line1')}
               <br />
-              <span style={{ fontStyle: 'italic', fontFamily: 'var(--font-display)' }}>{t('hero_h1_line2')}</span>
+              <span className="premium-italic">{t('hero_h1_line2')}</span>
             </h1>
 
-            <p style={{ fontSize: '1rem', opacity: 0.7, marginBottom: '40px', maxWidth: '400px', lineHeight: 1.6 }}>
+            <p className="premium-lead-text">
               {t('hero_lead')}
             </p>
 
-            <div style={{ display: 'flex', gap: '24px', marginBottom: '40px', flexWrap: 'wrap' }}>
-              <LocalizedLink to="/appointment" className="btn-primary">
+            <div className="hero-cta-group">
+              <LocalizedLink to="/appointment" className="btn-luxury">
                 {t('cta_appointment')}
               </LocalizedLink>
-              <LocalizedLink to="/services" className="btn-ghost">
+              <LocalizedLink to="/services" className="btn-luxury-outline">
                 {t('cta_services')}
               </LocalizedLink>
             </div>
 
-            <div style={{ display: 'flex', gap: '48px', opacity: 0.8, flexWrap: 'wrap' }}>
-              <div>
-                <div style={{ fontStyle: 'italic', fontFamily: 'var(--font-display)', fontSize: '1.5rem', marginBottom: '4px' }}>
-                  500+
-                </div>
-                <div style={{ fontSize: '0.65rem', letterSpacing: '0.2em', textTransform: 'uppercase', fontWeight: 700 }}>
-                  {t('stat_clients_label')}
-                </div>
+            <div className="premium-stats-grid">
+              <div className="premium-stat-item">
+                <span className="stat-val">500+</span>
+                <span className="stat-lbl">{t('stat_clients_label')}</span>
               </div>
-              <div>
-                <div style={{ fontStyle: 'italic', fontFamily: 'var(--font-display)', fontSize: '1.5rem', marginBottom: '4px' }}>
-                  {t('stat_years_value')}
-                </div>
-                <div style={{ fontSize: '0.65rem', letterSpacing: '0.2em', textTransform: 'uppercase', fontWeight: 700 }}>
-                  {t('stat_years_label')}
-                </div>
+              <div className="premium-stat-item">
+                <span className="stat-val">{t('stat_years_value')}</span>
+                <span className="stat-lbl">{t('stat_years_label')}</span>
               </div>
-              <div>
-                <div style={{ fontStyle: 'italic', fontFamily: 'var(--font-display)', fontSize: '1.5rem', marginBottom: '4px' }}>
-                  {t('stat_location_name')}
-                </div>
-                <div style={{ fontSize: '0.65rem', letterSpacing: '0.2em', textTransform: 'uppercase', fontWeight: 700 }}>
-                  {t('stat_location_label')}
-                </div>
+              <div className="premium-stat-item">
+                <span className="stat-val">{t('stat_location_name')}</span>
+                <span className="stat-lbl">{t('stat_location_label')}</span>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
-
-        <div
-          style={{
-            flex: '1 1 0%',
-            minWidth: 0,
-            background: 'var(--color-surface-2)',
-            position: 'relative',
-            display: 'none',
-            backgroundImage: 'radial-gradient(var(--color-border) 1px, transparent 1px)',
-            backgroundSize: '24px 24px',
-            isolation: 'isolate',
-          }}
-          className="hero-right"
-        />
       </section>
 
       <style>{`
-        .hero-split {
-          display: flex;
-          align-items: stretch;
-          min-height: calc(100vh - var(--public-nav-total-height) - 80px);
+        .hero-premium {
           position: relative;
+          min-height: 85vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 80px 4vw;
+          overflow: hidden;
+          margin-top: -80px; /* Offset for floating nav */
         }
-        @supports (height: 100dvh) {
-          .hero-split {
-            min-height: calc(100dvh - var(--public-nav-total-height) - 80px);
-          }
+        .hero-premium__bg {
+          position: absolute;
+          top: 0; left: 0; width: 100%; height: 100%;
+          z-index: 0;
+          overflow: hidden;
         }
-        .hero-split__left {
-          flex: 1 1 0%;
-          min-width: 0;
-          padding: clamp(28px, 6vw, 80px) 4vw 40px;
+        .hero-premium__bg img {
+          width: 100%; height: 100%; object-fit: cover;
+        }
+        .hero-premium__overlay {
+          position: absolute;
+          top: 0; left: 0; width: 100%; height: 100%;
+          background: linear-gradient(180deg, rgba(107, 76, 58, 0.3) 0%, rgba(107, 76, 58, 0.7) 100%);
+        }
+        .hero-orbs {
+          position: absolute;
+          top: 0; left: 0; width: 100%; height: 100%;
+          pointer-events: none;
+        }
+        .orb {
+          position: absolute;
+          border-radius: 50%;
+          filter: blur(60px);
+          opacity: 0.4;
+        }
+        .orb-1 {
+          width: 300px; height: 300px;
+          background: var(--color-accent);
+          top: -100px; right: -50px;
+        }
+        .orb-2 {
+          width: 400px; height: 400px;
+          background: #FFF;
+          bottom: -150px; left: -100px;
+          opacity: 0.2;
+        }
+        .hero-premium__content {
+          position: relative;
+          z-index: 2;
+          width: 100%;
+          max-width: 1200px;
+          display: flex;
+          justify-content: flex-start;
+        }
+        .hero-glass-card {
+          background: rgba(255, 255, 255, 0.08);
+          backdrop-filter: blur(20px);
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          border-radius: 32px;
+          padding: 48px;
+          max-width: 600px;
+          box-shadow: 0 32px 64px rgba(0,0,0,0.2);
+        }
+        .hero-badge {
+          display: inline-block;
+          padding: 8px 16px;
+          background: var(--color-accent);
+          color: #FFF;
+          font-size: 0.7rem;
+          font-weight: 700;
+          letter-spacing: 0.2em;
+          text-transform: uppercase;
+          border-radius: 100px;
+          margin-bottom: 24px;
+        }
+        .premium-display-h1 {
+          color: #FFF;
+          font-size: clamp(2.5rem, 6vw, 4rem);
+          line-height: 1.1;
+          margin-bottom: 24px;
+        }
+        .premium-italic {
+          font-family: var(--font-display);
+          font-style: italic;
+          color: var(--color-accent);
+        }
+        .premium-lead-text {
+          color: rgba(255,255,255,0.85);
+          font-size: 1.1rem;
+          line-height: 1.6;
+          margin-bottom: 40px;
+          max-width: 480px;
+        }
+        .hero-cta-group {
+          display: flex;
+          gap: 16px;
+          margin-bottom: 48px;
+        }
+        .btn-luxury {
+          background: #FFF;
+          color: var(--color-text);
+          padding: 16px 32px;
+          border-radius: 12px;
+          font-weight: 700;
+          text-decoration: none;
+          transition: all 0.3s ease;
+        }
+        .btn-luxury-outline {
+          background: transparent;
+          color: #FFF;
+          padding: 16px 32px;
+          border-radius: 12px;
+          border: 1px solid rgba(255,255,255,0.3);
+          font-weight: 700;
+          text-decoration: none;
+          transition: all 0.3s ease;
+        }
+        .premium-stats-grid {
+          display: flex;
+          gap: 40px;
+        }
+        .premium-stat-item {
           display: flex;
           flex-direction: column;
-          justify-content: center;
-          position: relative;
-          isolation: isolate;
         }
-        .hero-split__inner {
-          max-width: 600px;
-          margin-left: auto;
-          margin-right: 4vw;
-          width: 100%;
+        .stat-val {
+          color: #FFF;
+          font-family: var(--font-display);
+          font-size: 2rem;
+          font-style: italic;
+          line-height: 1;
         }
-        @media (min-width: 900px) {
-          .hero-right { display: block !important; }
+        .stat-lbl {
+          color: rgba(255,255,255,0.6);
+          font-size: 0.65rem;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          font-weight: 700;
+          margin-top: 4px;
         }
-        @media (max-width: 899px) {
-          .hero-split {
+
+        @media (max-width: 768px) {
+          .hero-premium {
+            min-height: 90vh;
+            padding-top: 120px;
+            align-items: flex-end;
+          }
+          .hero-glass-card {
+            padding: 32px 24px;
+            border-radius: 24px;
+            background: rgba(107, 76, 58, 0.4); /* Deeper for mobile readability */
+          }
+          .hero-cta-group {
             flex-direction: column;
-            min-height: auto;
           }
-          .hero-split__left {
-            padding-top: clamp(20px, 4vw, 32px);
-            padding-bottom: 32px;
+          .btn-luxury, .btn-luxury-outline {
+            text-align: center;
           }
-          .hero-vertical-side {
-            display: none !important;
+          .premium-stats-grid {
+            gap: 20px;
+            justify-content: space-between;
           }
-          .hero-split__inner {
-            margin-left: 0;
-            margin-right: 0;
-            max-width: 100%;
-          }
+          .stat-val { font-size: 1.5rem; }
         }
       `}</style>
 

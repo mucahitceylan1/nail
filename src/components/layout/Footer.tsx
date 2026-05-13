@@ -20,14 +20,13 @@ export default function Footer() {
   return (
     <footer
       style={{
-        borderTop: '1px solid rgba(255, 255, 255, 0.06)',
-        paddingTop: 'var(--sp-8)',
+        borderTop: '1px solid var(--color-border)',
+        paddingTop: '60px',
         paddingLeft: 0,
         paddingRight: 0,
-        paddingBottom: 'calc(var(--sp-5) + var(--safe-bottom))',
-        marginTop: 'var(--sp-10)',
-        background:
-          'linear-gradient(180deg, rgba(201, 169, 110, 0.04) 0%, transparent 120px)',
+        paddingBottom: '40px',
+        marginTop: '80px',
+        background: 'linear-gradient(180deg, var(--color-surface) 0%, var(--color-surface-2) 100%)',
       }}
     >
       <div className="container-custom">
