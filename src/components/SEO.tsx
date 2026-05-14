@@ -17,7 +17,7 @@ export default function SEO({
   title = 'Nail Lab. by İldem — Premium Nail Studio',
   description = 'Kalıcı oje, protez tırnak, manikür, pedikür ve daha fazlası için premium tırnak stüdyosu.',
   keywords = 'tırnak, nail art, protez tırnak, manikür, pedikür, kalıcı oje, nail salon',
-  image = '/og-image.png',
+  image = '/hero-nail-art.png',
   pathWithoutLocale,
 }: SEOProps) {
   const siteUrl = getPublicSiteOrigin();
