@@ -82,42 +82,30 @@ export default function HomePage() {
           <motion.img 
             src="/hero-nail-art.png" 
             alt="Nail Lab Luxury" 
-            initial={{ scale: 1.2 }}
+            initial={{ scale: 1.1 }}
             animate={{ scale: 1 }}
             transition={{ duration: 1.5, ease: "easeOut" }}
           />
-          <div className="hero-premium__overlay" style={{ background: 'linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(107, 76, 58, 0.6) 100%)' }}></div>
+          <div className="hero-premium__overlay" style={{ background: 'linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%)' }}></div>
           
-          {/* Animated Background Orbs */}
+          {/* Animated Background Orbs (More subtle) */}
           <div className="hero-orbs">
             <motion.div 
-              animate={{ x: [0, 100, 0], y: [0, 50, 0] }}
+              animate={{ x: [0, 50, 0], y: [0, 30, 0] }}
               transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
               className="orb orb-1" 
-            />
-            <motion.div 
-              animate={{ x: [0, -80, 0], y: [0, 120, 0] }}
-              transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-              className="orb orb-2" 
             />
           </div>
         </div>
 
         <div className="hero-premium__content">
           <motion.div 
-            initial={{ y: 40, opacity: 0, scale: 0.95 }} 
-            animate={{ y: 0, opacity: 1, scale: 1 }} 
-            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-            className="hero-glass-card"
+            initial={{ y: 40, opacity: 0 }} 
+            animate={{ y: 0, opacity: 1 }} 
+            transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
           >
-            <div className="hero-editorial-badge">
-              <span className="dot"></span>
-              {t('hero_vertical')}
-              <span className="dot"></span>
-            </div>
             <h1 className="premium-display-h1">
               {t('hero_h1_line1')}
-              <br />
               <span className="premium-italic">{t('hero_h1_line2')}</span>
             </h1>
 
@@ -126,10 +114,10 @@ export default function HomePage() {
             </p>
 
             <div className="hero-cta-group">
-              <LocalizedLink to="/appointment" className="btn-luxury">
+              <LocalizedLink to="/appointment" className="btn-luxury-v3">
                 {t('cta_appointment')}
               </LocalizedLink>
-              <LocalizedLink to="/services" className="btn-luxury-outline">
+              <LocalizedLink to="/services" className="btn-luxury-outline-v3">
                 {t('cta_services')}
               </LocalizedLink>
             </div>
@@ -155,19 +143,16 @@ export default function HomePage() {
       <style>{`
         .hero-premium {
           position: relative;
-          min-height: 85vh;
           display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 80px 4vw;
+          flex-direction: column;
+          height: 100vh;
+          height: 100dvh;
           overflow: hidden;
-          margin-top: -80px; /* Offset for floating nav */
         }
         .hero-premium__bg {
           position: absolute;
           top: 0; left: 0; width: 100%; height: 100%;
           z-index: 0;
-          overflow: hidden;
         }
         .hero-premium__bg img {
           width: 100%; height: 100%; object-fit: cover;
@@ -175,110 +160,104 @@ export default function HomePage() {
         .hero-premium__overlay {
           position: absolute;
           top: 0; left: 0; width: 100%; height: 100%;
-          background: linear-gradient(180deg, rgba(107, 76, 58, 0.3) 0%, rgba(107, 76, 58, 0.7) 100%);
-        }
-        .hero-orbs {
-          position: absolute;
-          top: 0; left: 0; width: 100%; height: 100%;
-          pointer-events: none;
-        }
-        .orb {
-          position: absolute;
-          border-radius: 50%;
-          filter: blur(60px);
-          opacity: 0.4;
-        }
-        .orb-1 {
-          width: 300px; height: 300px;
-          background: var(--color-accent);
-          top: -100px; right: -50px;
-        }
-        .orb-2 {
-          width: 400px; height: 400px;
-          background: #FFF;
-          bottom: -150px; left: -100px;
-          opacity: 0.2;
+          background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%);
+          z-index: 1;
         }
         .hero-premium__content {
-          position: relative;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          padding: 60px 8vw 40px;
           z-index: 2;
-          width: 100%;
-          max-width: 1200px;
-          display: flex;
-          justify-content: flex-start;
-        }
-        .hero-glass-card {
-          background: rgba(255, 255, 255, 0.08);
-          backdrop-filter: blur(20px);
-          border: 1px solid rgba(255, 255, 255, 0.2);
-          border-radius: 32px;
-          padding: 48px;
-          max-width: 600px;
-          box-shadow: 0 32px 64px rgba(0,0,0,0.2);
-        }
-        .hero-editorial-badge {
-          display: flex;
-          align-items: center;
-          gap: 12px;
-          color: var(--color-accent);
-          font-size: 0.7rem;
-          font-weight: 700;
-          letter-spacing: 0.3em;
-          text-transform: uppercase;
-          margin-bottom: 24px;
-        }
-        .hero-editorial-badge .dot {
-          width: 4px;
-          height: 4px;
-          background: var(--color-accent);
-          border-radius: 50%;
-          opacity: 0.6;
+          background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, transparent 100%);
+          backdrop-filter: blur(5px);
+          -webkit-backdrop-filter: blur(5px);
         }
         .premium-display-h1 {
           color: #FFF;
-          font-size: clamp(2.5rem, 6vw, 4rem);
-          line-height: 1.1;
-          margin-bottom: 24px;
+          font-size: 3.2rem;
+          line-height: 1;
+          margin-bottom: 20px;
+          font-weight: 800;
+          text-shadow: 0 4px 12px rgba(0,0,0,0.3);
         }
         .premium-italic {
           font-family: var(--font-display);
           font-style: italic;
           color: var(--color-accent);
+          display: block;
         }
         .premium-lead-text {
-          color: rgba(255,255,255,0.85);
-          font-size: 1.1rem;
+          color: rgba(255,255,255,0.9);
+          font-size: 1rem;
           line-height: 1.6;
           margin-bottom: 40px;
-          max-width: 480px;
+          max-width: 450px;
+          font-weight: 400;
         }
         .hero-cta-group {
           display: flex;
-          gap: 16px;
-          margin-bottom: 48px;
+          flex-direction: column;
+          gap: 15px;
+          margin-bottom: 40px;
         }
-        .btn-luxury {
+        .btn-luxury-v3 {
           background: #FFF;
-          color: var(--color-text);
-          padding: 16px 32px;
-          border-radius: 12px;
-          font-weight: 700;
+          color: #000;
+          padding: 20px;
+          border-radius: 100px;
+          font-weight: 800;
+          text-align: center;
           text-decoration: none;
+          font-size: 0.85rem;
+          text-transform: uppercase;
+          letter-spacing: 0.15em;
           transition: all 0.3s ease;
         }
-        .btn-luxury-outline {
-          background: transparent;
+        .btn-luxury-outline-v3 {
+          background: rgba(255, 255, 255, 0.1);
           color: #FFF;
-          padding: 16px 32px;
-          border-radius: 12px;
-          border: 1px solid rgba(255,255,255,0.3);
+          padding: 20px;
+          border-radius: 100px;
+          border: 1px solid rgba(255,255,255,0.4);
           font-weight: 700;
+          text-align: center;
           text-decoration: none;
+          font-size: 0.85rem;
+          text-transform: uppercase;
+          letter-spacing: 0.15em;
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
           transition: all 0.3s ease;
         }
         .premium-stats-grid {
-          display: flex;
-          gap: 40px;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 20px;
+          padding-top: 30px;
+          border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .premium-stat-item {
+          text-align: center;
+        }
+        .stat-val {
+          color: #FFF;
+          font-family: var(--font-display);
+          font-size: 1.6rem;
+          font-style: italic;
+          line-height: 1;
+        }
+        .stat-lbl {
+          color: rgba(255,255,255,0.6);
+          font-size: 0.55rem;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          font-weight: 700;
+          margin-top: 4px;
+        }
+        .premium-stat-item {
+          text-align: center;
         }
         .premium-stat-item {
           display: flex;
